@@ -1,0 +1,168 @@
+.hero {
+  min-height: 400px;
+  background-color: #c4c4c4;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../img/bg/bg-img-mobile.jpg);
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../img/bg/bg-img-mobile@2x.jpg");
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__main-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+  width: 360px;
+}
+
+.hero__main-btn {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+  transition: background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func),
+    border-radius var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../img/bg/bg-img-tablet.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
+  screen and (min-resolution: 192dpi) and (min-width: 767px),
+  screen and (min-resolution: 2dppx) and (min-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../img/bg/bg-img-tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-height: 600;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../img/bg/bg-img-desktop.jpg);
+  }
+
+  .hero__main-title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../img/bg/bg-img-desktop@2x.jpg");
+  }
+}
+// .hero {
+//   background-color: #c4c4c4;
+//   padding-top: 200px;
+//   padding-bottom: 200px;
+//   background-image: linear-gradient(
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../img/bg/bg-img.jpg);
+//   background-size: cover;
+// }
+
+// .hero__main-title {
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.36;
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
+//   color: #ffffff;
+//   width: 696px;
+//   margin-bottom: 30px;
+// }
+
+// .hero__main-btn {
+//   font-family: var(--primary-font);
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.88;
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   color: #ffffff;
+//   background-color: #2196f3;
+//   padding: 10px 32px;
+//   border-radius: 4px;
+//   border: none;
+//   transition: background-color var(--transition-dur-and-func),
+//     box-shadow var(--transition-dur-and-func),
+//     border-radius var(--transition-dur-and-func);
+
+//   &:hover,
+//   &:focus {
+//     background-color: #188ce8;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//   }
+// }
