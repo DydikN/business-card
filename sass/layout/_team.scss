@@ -48,6 +48,12 @@
   gap: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .employee-retreat {
     padding-bottom: 30px;

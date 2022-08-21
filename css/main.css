@@ -818,6 +818,11 @@ body {
   gap: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 1200px) {
   .employee-retreat {
     padding-bottom: 30px;
@@ -835,7 +840,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -853,6 +858,16 @@ body {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .clients-list-link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list-link {
+    width: 170px;
+  }
+}
 .footer {
   background-color: var(--dark-background-color);
 }
@@ -864,11 +879,14 @@ body {
 
 .footer-nav {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-nav-container {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .logo-footer {
@@ -886,8 +904,15 @@ body {
   margin-top: 20px;
 }
 
+.adress-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .adress-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .contact-adress-footer {
@@ -926,8 +951,12 @@ body {
   color: #2196f3;
 }
 
-.footer-place {
+.footer-social-links {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .footer-text {
@@ -958,8 +987,11 @@ body {
   fill: #ffffff;
 }
 
-.footer-social-links {
-  margin-right: 93px;
+.footer-sub-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .footer-sub-text {
@@ -969,11 +1001,10 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 20px;
 }
 
 .footer-sub-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -981,7 +1012,6 @@ body {
   border-radius: 4px;
   background-color: transparent;
   outline: none;
-  margin-right: 12px;
   caret-color: #ffffff;
   font-weight: 400;
   font-size: 16px;
@@ -1032,6 +1062,47 @@ body {
   height: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-social-links {
+    margin-bottom: 102px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-nav {
+    align-items: baseline;
+    justify-content: normal;
+    flex-wrap: nowrap;
+  }
+  .footer-nav-container {
+    margin-right: 70px;
+    margin-bottom: 0;
+    text-align: start;
+  }
+  .adress-list {
+    display: block;
+  }
+  .footer-social-links {
+    display: block;
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
+  .footer-sub-text {
+    margin-bottom: 20px;
+  }
+  .footer-sub-input {
+    width: 358px;
+  }
+  .footer-sub-form {
+    display: block;
+    flex-direction: row;
+    gap: 0;
+  }
+}
 .portfolio-btn-list {
   display: flex;
   gap: 8px;
