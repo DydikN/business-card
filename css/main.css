@@ -240,8 +240,8 @@ body {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -271,6 +271,12 @@ body {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -365,8 +371,8 @@ body {
   display: flex;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
@@ -414,6 +420,12 @@ body {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form-check-desc {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 .description {
   font-weight: 400;
   font-size: 14px;
