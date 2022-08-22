@@ -16,7 +16,6 @@ ul {
 img {
   display: block;
   width: 100%;
-  height: auto;
 }
 
 button {
@@ -1234,11 +1233,11 @@ body {
   }
   .projects-card {
     flex-basis: calc((100% - 60px) / 2);
+    margin: 0;
   }
   .projects-list__link {
     display: flex;
     flex-direction: column;
-    height: 100%;
   }
   .project-card-wrapper {
     flex-grow: 1;
@@ -1247,6 +1246,9 @@ body {
 @media screen and (min-width: 1200px) {
   .projects-card {
     flex-basis: calc((100% - 60px) / 3);
+  }
+  .project-card-wrapper {
+    flex-grow: 0;
   }
 }
 .visually-hidden {
