@@ -15,6 +15,8 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 button {
@@ -646,7 +648,6 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
-  width: 360px;
 }
 
 .hero__main-btn {
@@ -674,6 +675,9 @@ body {
 @media screen and (min-width: 767px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg/bg-img-tablet.jpg);
+  }
+  .hero__main-title {
+    width: 360px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -785,18 +789,11 @@ body {
   background-color: #f5f4fa;
 }
 
-.team-list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
 .employee-card {
-  flex-basis: calc((100% - 90px) / 4);
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
 }
 
 .employee-retreat {
@@ -827,17 +824,28 @@ body {
 .social-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
 @media screen and (min-width: 768px) {
   .team-list {
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 0;
+  }
+  .employee-card {
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .employee-retreat {
     padding-bottom: 30px;
+  }
+  .employee-card {
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 .clients-list {
@@ -912,7 +920,6 @@ body {
 
 .adress-footer {
   font-style: normal;
-  width: 231px;
   margin-top: 20px;
 }
 
@@ -1016,7 +1023,7 @@ body {
 }
 
 .footer-sub-input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1083,6 +1090,9 @@ body {
   .footer-social-links {
     margin-bottom: 102px;
   }
+  .footer-sub-input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-nav {
@@ -1108,6 +1118,7 @@ body {
   }
   .footer-sub-input {
     width: 358px;
+    margin-right: 12px;
   }
   .footer-sub-form {
     display: block;
@@ -1117,8 +1128,7 @@ body {
 }
 .portfolio-btn-list {
   display: flex;
-  gap: 8px;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
@@ -1142,14 +1152,22 @@ body {
   border-radius: 4px;
 }
 
-.projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+.portfolio-btn-list__item:not(:last-child) {
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-btn-list {
+    justify-content: center;
+    gap: 8px;
+  }
+  .btn-portfolio {
+    margin: 0;
+  }
+}
 .projects-card {
-  flex-basis: calc((100% - 60px) / 3);
+  margin-bottom: 30px;
   transition: box-shadow var(--transition-dur-and-func);
 }
 .projects-card:hover, .projects-card:focus {
@@ -1181,7 +1199,7 @@ body {
   height: 100%;
   padding: 63px 24px;
   overflow: auto;
-  transform: translate(0, 100%);
+  transform: translate(0, 101%);
   transition: transform var(--transition-dur-and-func);
   background-color: rgba(33, 150, 243, 0.9);
   font-weight: 400;
@@ -1208,6 +1226,29 @@ body {
   color: #757575;
 }
 
+@media screen and (min-width: 768px) {
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .projects-card {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  .projects-list__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .project-card-wrapper {
+    flex-grow: 1;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects-card {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
