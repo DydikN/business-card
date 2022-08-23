@@ -241,7 +241,7 @@ body {
 
 .modal {
   position: absolute;
-  width: 450px;
+  width: 94%;
   height: 609px;
   top: 50%;
   left: 50%;
@@ -272,6 +272,11 @@ body {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
